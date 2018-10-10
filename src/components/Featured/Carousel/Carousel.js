@@ -20,12 +20,11 @@ const Carousel = () => {
         <div
             className='carrousel_wrapper'
             style={{
-                background: 'red',
+                background: '#f0d1e0',
                 height: `${window.innerHeight}px`,
                 overflow: 'hidden'
             }}
         >
-        
             <Slider {...settings}>
                 <div>
                     <div
@@ -55,8 +54,7 @@ const Carousel = () => {
                         }}>
                     </div>
                 </div>
-            </Slider>
-            
+            </Slider>  
         </div>
     );
 };
