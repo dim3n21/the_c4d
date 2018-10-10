@@ -1,9 +1,10 @@
 import React from 'react';
 import Slider from "react-slick";
 
-import slide_one from '../../../assets/slides/slide_one.jpg';
+
+import slide_one_1 from '../../../assets/slides/slide_one_1.jpg';
 import slide_two from '../../../assets/slides/slide_two.jpg';
-import slide_three from '../../../assets/slides/slide_three.jpg';
+import slide_three_1 from '../../../assets/slides/slide_three_1.jpg';
 
 
 const Carousel = () => {
@@ -24,12 +25,13 @@ const Carousel = () => {
                 overflow: 'hidden'
             }}
         >
+        
             <Slider {...settings}>
                 <div>
                     <div
                         className='carousel_image'
                         style={{
-                            background: `url(${slide_one})`,
+                            background: `url(${slide_one_1}) center no-repeat`,
                             height: `${window.innerHeight}px`
                         }}>
                     </div>
@@ -38,8 +40,9 @@ const Carousel = () => {
                     <div
                         className='carrousel_image'
                         style={{
-                            background: `url(${slide_two})`,
-                            height: `${window.innerHeight}px`
+                            background: `url(${slide_two}) center center no-repeat`,
+                            height: `${window.innerHeight}px`,
+                            backgroundRepeat: 'no-repeat'
                         }}>
                     </div>
                 </div>
@@ -47,12 +50,13 @@ const Carousel = () => {
                     <div
                         className='carousel_image'
                         style={{
-                            background: `url(${slide_three})`,
+                            background: `url(${slide_three_1}) center center no-repeat`,
                             height: `${window.innerHeight}px`
                         }}>
                     </div>
                 </div>
             </Slider>
+            
         </div>
     );
 };
